@@ -1,0 +1,322 @@
+body {
+    background: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .showcase::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(new-york-manhattan-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+  }
+  
+  .showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  
+  .showcase:hover .content {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+  
+  .content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+  }
+  
+  .content .logo {
+    height: 180px;
+    width: 180px;
+  }
+  
+  .content .title {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  .content .text {
+    line-height: 1.7;
+    margin-top: 1rem;
+    font-family: 'Space Mono', monospace;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+  }
+  
+  .grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-2 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .center {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .bg-light {
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  .bg-dark {
+    background: red;
+    color: #f4f4f4;
+  }
+  
+  footer {
+    padding: 2.2rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Small Screens */
+  @media (max-width: 560px) {
+    .showcase::after {
+      height: 50vh;
+    }
+  
+    .content {
+      top: 5%;
+      margin-top: 5px;
+    }
+  
+    .content .logo {
+      height: 140px;
+      width: 140px;
+    }
+  
+    .content .text {
+      display: none;
+    }
+  
+    .grid-3,
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+  
+    .services div {
+      border-bottom: #333 dashed 1px;
+      padding: 1.2rem 1rem;
+    }
+  }
+  
+  
+  @media (max-height: 500px) {
+    .content .title,
+    .content .text {
+      display: none;
+    }
+  
+    .content {
+      top: 0;
+    }
+  }
+
+  .aboutme {
+      font-family: 'Permanent Marker', cursive;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .aboutmetxt {
+    font-family: 'Rock Salt', cursive;
+    font-size: 2.0rem;
+    float: left;
+    width: 50%;
+    padding: 10px;
+   
+  }
+
+  .row:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+ 
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Rock Salt', cursive;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  
+  .column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  
+  
+
+  
+  /* Header/Blog Title */
+  .header2 {
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    background: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    
+    
+    padding: 10px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+     color: #111;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
